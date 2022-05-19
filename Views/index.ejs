@@ -21,14 +21,14 @@
             </tr>
         <% for(let i=0; i<budget.length; i++) { %>
                 <tr>
-                    <td><a href="/budget/<%= i %>"><%= budget[i].date %></a></td>
-                    <td><%= budget[i].name %></td>
+                    <td><%= budget[i].date %></td>
+                    <td><a href="/budgets/<%= i %>"><%= budget[i].name %></a></td>
                     <td><%= budget[i].from %></td>
                     <td><%= budget[i].amount %></td>
                     <td><%= budget[i].tags %></td>
                 </tr>
+                <% } %>
             </table>
-        <% } %>
 
 
     </div>
