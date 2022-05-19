@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new Budget Item</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+<body>
+    <h1>New Budget Item</h1>
+   
+    <form action='/budgets' method='POST'>
+        <!-- name="" tells it which key value to send it back to in model -->
+        <a href="/budgets"><button>Back to Budget</button></a>
+        <br />
+        date: <input type="text" name="date" placeholder="month day"/><br />
+        name: <input type="text" name="name" placeholder="input item name here"/><br />
+        from: <input type="text" name="from" placeholder="from source"/><br />
+        amount: <input type="text" name="amount" placeholder="+income/-expenditure"/><br />
+        tags: <input type="text" name="tags" placeholder="Relevant Info"/><br />
+        <input type="submit" value="Create New Budget Item" />
+        <br />
+    </form>
+</body>
+</html>
